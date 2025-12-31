@@ -9,16 +9,15 @@ import {
 } from "@/components/ui/dropdown-menu"
 import { useRouter } from "next/navigation"
 import { Button } from "./ui/button";
-import { AvatarImage } from "@radix-ui/react-avatar";
-import { Avatar, AvatarFallback } from "./ui/avatar";
+import { Avatar, AvatarFallback,AvatarImage } from "./ui/avatar";
 import { LogOut } from "lucide-react";
 import NavItems from "./NavItems";
 
 const UserDropdown = () =>{
     const router = useRouter();
 
-    const handleSignOut:()=>Promise <void> = async ()=>{
-        console.log("h")
+    const handleSignOut = async ()=>{
+        router.push("/sign-in")
     }
 
     const user = {name: 'John',email:'contact@gmail.com'}
