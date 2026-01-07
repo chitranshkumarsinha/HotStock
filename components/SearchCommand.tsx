@@ -87,7 +87,7 @@ export default function SearchCommand({ renderAs = 'button', label = 'Add stock'
                         <li key={stock.symbol} className="search-item">
                             <Link
                                 href={`/stocks/${stock.symbol}`}
-                                onClick={handleSearch}
+                                onClick={handleSelectStock}
                                 className="search-item-link"
                             >
                                 <TrendingUp className="h-4 w-4 text-gray-500"/>
